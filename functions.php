@@ -497,3 +497,135 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+
+
+/* My slider admin panel plugin*/
+
+add_action('init', 'slider_init');
+
+function slider_init()
+{
+    //Labels for custom post type.
+    $view_labels = array(
+
+// general name for the post type, usually plural.
+        'name' => _x('Slider', 'post type general name'),
+
+//name for one object of this post type. Defaults to value of name
+        'singular_name' => _x('Slider', 'post type singular name'),
+
+//the all items text used in the menu. Default is the Name label
+        'all_items' => __('All Slides'),
+
+// the add new text. The default is Add New for both hierarchical and non-hierarchical types. When internationalizing this string, please use a gettext context matching your post type. Example: _x('Add New', 'product');
+        'add_new' => _x('Add new slide', 'slide'),
+
+// the add new item text. Default is Add New Post/Add New Page
+        'add_new_item' => __('Add new slide'),
+
+// the edit item text. Default is Edit Post/Edit Page
+        'edit_item' => __('Edit slide'),
+
+//the new item text. Default is New Post/New Page
+        'new_item' => __('New slide'),
+
+//the view item text. Default is View Post/View Page
+        'view_item' => __('View slide'),
+
+//the search items text. Default is Search Posts/Search Pages
+        'search_items' => __('Search in slider'),
+
+//the not found text. Default is No posts found/No pages found
+        'not_found' =>  __('No slide found'),
+
+//the not found in trash text. Default is No posts found in Trash/No pages found in Trash
+        'not_found_in_trash' => __('No slide found in trash'),
+
+//the parent text. This string isn't used on non-hierarchical types. In hierarchical ones the default is Parent Page
+        'parent_item_colon' => ''
+    );
+
+//Arguments
+    $args = array(
+
+//A plural descriptive name for the post type marked for translation.
+        'labels' => $view_labels,
+
+//Whether a post type is intended to be used publicly either via the admin interface or by front-end users.
+        'public' => true,
+
+//Whether queries can be performed on the front end as part of parse_request().
+        'publicly_queryable' => true,
+
+//Whether to generate a default UI for managing this post type in the admin.
+        'show_ui' => true,
+
+//Sets the query_var key for this post type.
+        'query_var' => true,
+
+//Triggers the handling of rewrites for this post type. To prevent rewrites, set to false.
+        'rewrite' => true,
+
+//The string to use to build the read, edit, and delete capabilities. May be passed as an array to allow for alternative plurals when using this argument as a base to construct the capabilities
+        'capability_type' => 'post',
+
+//Whether the post type is hierarchical (e.g. page). Allows Parent to be specified. The 'supports' parameter should contain 'page-attributes' to show the parent select box on the editor page.
+        'hierarchical' => false,
+
+//menu_position
+        'menu_position' => 5,
+
+//An alias for calling add_post_type_support() directly. As of 3.5, boolean false can be passed as value instead of an array to prevent default (title and editor) behavior.
+        'supports' => array('title','editor','author','thumbnail','excerpt','comments','custom-fields', 'slide-category'),
+
+//Enables post type archives. Will use $post_type as archive slug by default.
+        'has_archive' => 'slide'
+    );
+    register_post_type('slider',$args);
+}
+
+
+/*end my slider*/
+
+/* my taxonomi */
+
+// вызываем функцию create_topics_nonhierarchical_taxonomy во время инициализации:
+add_action( 'init', 'create_topics_nonhierarchical_taxonomy', 0 );
+
+function create_topics_nonhierarchical_taxonomy() {
+
+// строки для интерфейса
+
+    $labels = array(
+        'name' => 'slide-category',
+        'singular_name' => 'slide-category',
+        'search_items' => 'Поиск slide-category',
+        'popular_items' => 'Популярные slide--category',
+        'all_items' => 'Все slide-category',
+        'edit_item' => 'Редактировать slide-category',
+        'update_item' => 'Обновить slide-category',
+        'add_new_item' => 'Добавить новую slide-category',
+        'new_item_name' => 'Имя новой slide-category',
+        'menu_name' => 'slide-category',
+        'separate_items_with_commas' => 'Разделять slide-category запятыми',
+        'add_or_remove_items' => 'Добавить или удалить slide-category',
+        'choose_from_most_used' => 'Выберите slide-category из списка',
+        'menu_name' => 'slide-category',
+    );
+
+// Регистрируем тему без иерархии (вроде меток):
+
+    register_taxonomy('slide-category', 'slider', array(
+        'hierarchical' => false,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'update_count_callback' => '_update_post_term_count',
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'slide-category' ),
+    ));
+
+}
+
+/* end my taxonomi */
