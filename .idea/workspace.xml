@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d42c6cd-929a-4ee9-8bc3-f84f82a759fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/expo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.css" afterPath="$PROJECT_DIR$/css/header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="expo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,19 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="76" selection-start="1895" selection-end="1895" vertical-scroll-proportion="-13.0" vertical-offset="342" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1472" column="26" selection-start="30347" selection-end="30347" vertical-scroll-proportion="0.4283019" vertical-offset="24797" max-vertical-offset="30090">
+            <state line="28" column="103" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.37269372" vertical-offset="138" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -54,7 +39,7 @@
       <file leaf-file-name="header.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state line="42" column="23" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -79,9 +64,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/header.css" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/css/header.css" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -243,23 +228,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1472" column="26" selection-start="30347" selection-end="30347" vertical-scroll-proportion="0.4283019" vertical-offset="24797" max-vertical-offset="30090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="42" column="23" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="76" selection-start="1895" selection-end="1895" vertical-scroll-proportion="-13.0" vertical-offset="342" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1472" column="26" selection-start="30347" selection-end="30347" vertical-scroll-proportion="0.4283019" vertical-offset="24797" max-vertical-offset="30090">
+        <state line="28" column="103" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.37269372" vertical-offset="138" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
