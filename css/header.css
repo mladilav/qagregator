@@ -1,0 +1,9 @@
+header .logo{
+    background-image: url('../img/logo.png');
+    width: 245px;
+    float: left;
+    height: 50px;
+}
+header .main-navigation{
+
+}

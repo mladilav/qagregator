@@ -662,7 +662,7 @@ footer[role="contentinfo"] {
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
-	max-width: 960px;
+	max-width: 1000px;
 	max-width: 68.571428571rem;
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
@@ -1470,8 +1470,7 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		max-width: 960px;
-		max-width: 68.571428571rem;
+		max-width: 1000px;
 		overflow: hidden;
 	}
 	.site-content {
@@ -1633,8 +1632,8 @@ img#wpstats {
 	}
 }
 
-/* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
+/* Minimum width of 1000 pixels. */
+@media screen and (min-width: 1000px) {
 	body {
 		background-color: #e6e6e6;
 	}
