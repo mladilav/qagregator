@@ -47,10 +47,21 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
         <a href="/"><div class="logo"></div></a>
+        <ul class="lang"><?php pll_the_languages(array('show_flags'=>0,'show_names'=>1));?></ul>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 
+		</nav><!-- #site-navigation -->
+        <div class="otdel">
+        <div class="cap">Отдел продаж</div>
+        <div class="phone">
+            <ul>
+                <li><a href="tel:+9660312694002">+966 (0312) 69-40-02</a></li>
+                <li><a href="tel:+9960312694011">+996 (0312) 69-40-11</a></li>
+                <li><a href="tel:+9960312479900<">+996 (0312) 47-99-00</a></li>
+                <li><a href="tel:+9660312694002">+966 (0312) 69-40-02</a></li>
+                <li><a href="tel:+9960312694011">+996 (0312) 69-40-11</a></li>
+            </ul></div></div>
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">

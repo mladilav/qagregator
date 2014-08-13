@@ -1,3 +1,14 @@
+html,body{height: 100%;}
+.wrapper{
+    min-height: 100%;
+    margin-top: 69px;
+    height: auto;}
+
+
+.site-header{
+    padding: 14px 0 0 0!important;
+    position: fixed;
+}
 header .logo{
     background-image: url('../img/logo.png');
     width: 245px;
@@ -16,7 +27,7 @@ header .main-navigation ul.nav-menu{
     padding: 0;
     position: relative;
     line-height: 0;
-    margin-top: 17px;
+    margin-top: 12px;
     margin-left: 9px;
 }
 
@@ -38,7 +49,80 @@ header .main-navigation ul.nav-menu li .sub-menu{
 
 header .main-navigation ul.nav-menu li .sub-menu li a{
     background-color: #fe6760;
-    border-bottom:1px dotted #fff;
-    padding: 5px;
-    font-style: normal;
+    border-bottom: 1px dotted #fff;
+    padding: 3px;
+    text-transform: none;
+    font-size: 13px;
+}
+header .lang li{
+    float: left;
+    padding-left: 5px;
+}
+
+header .lang{
+    float: left;
+    margin-left: 508px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -7px;
+}
+
+
+header .lang .current-lang a{
+    color:#3056a1;
+}
+header .lang li a{
+    color:#c44741;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header .lang li:after{
+    content: "|";
+    color:#c44741;
+    font-weight: bold;
+}
+header .otdel{
+    float: left;
+    margin-left: 27px;
+    margin-top: -19px;
+}
+header .otdel .cap{
+    background-color: #f6635d;
+    background: linear-gradient(to top, #98302b, #f6635d);
+    padding: 6px;
+    color: #ffffff;
+    width: 138px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 3px 4px 14px black;
+    position: relative;
+    z-index: 6;
+}
+
+header .phone{
+    background-color: #1e3d8a;
+    float: left;
+    padding: 6px;
+    box-shadow: 3px 4px 14px black;
+    position: relative;
+    z-index: 5;
+    width: 138px;
+    text-align: center;
+}
+
+header .phone ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 13px;
+
+}
+
+header .otdel:after{
+    content: url("../img/phone.png");
+    margin-left: -4px;
+    position: relative;
+    z-index: 6;
 }
