@@ -1,6 +1,49 @@
 #mySlider {
     width:100%;
-    height:600px;
     background-color: blue;
+    display: inline-block;
+}
+
+.your-class {
+    width: 600px;
+    height:400px;
+    clear:both;
+    margin: 0 auto;
+}
+
+#sBlock {
+    width:100%;
     clear:both;
 }
+
+#slBlock {
+    width:300px;
+    float:left;
+    background-color: khaki;
+}
+
+#slBlock ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+#slBlock ul li {
+    height:200px;
+    border: solid 1px red;
+}
+
+#srBlock {
+    width:700px;
+    float:left;
+    background-color: green;
+}
+
+#srBlock .slick-prev {
+    left:0px!important;
+}
+
+#srBlock .slick-next {
+    right:0px!important;
+}
+

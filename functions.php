@@ -601,7 +601,7 @@ function create_topics_nonhierarchical_taxonomy() {
         'name' => 'slide-category',
         'singular_name' => 'slide-category',
         'search_items' => 'Поиск slide-category',
-        'popular_items' => 'Популярные slide--category',
+        'popular_items' => 'Популярные slide-category',
         'all_items' => 'Все slide-category',
         'edit_item' => 'Редактировать slide-category',
         'update_item' => 'Обновить slide-category',
