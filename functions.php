@@ -629,3 +629,6 @@ function create_topics_nonhierarchical_taxonomy() {
 }
 
 /* end my taxonomi */
+
+//шорткод для вызова плагина в любом месте сайта
+add_shortcode( 'showSlider', 'showSlider' );
