@@ -1,4 +1,4 @@
 <?php get_header(); ?>
-<?php showSlider(); ?>
-<?php get_footer(); ?>
+<?php showSlider (); ?>
 
+<?php get_footer(); ?>
