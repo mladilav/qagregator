@@ -26,7 +26,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slider.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/header.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/footer.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/footer.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css"/>
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -35,6 +36,8 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js" ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/vendors/slider.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
+
     <script>
         $( document ).ready(function() {
             //alert( "ready!" );
