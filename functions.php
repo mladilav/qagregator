@@ -632,3 +632,8 @@ function create_topics_nonhierarchical_taxonomy() {
 
 //шорткод для вызова плагина в любом месте сайта
 add_shortcode( 'showSlider', 'showSlider' );
+
+function my_excerpt_length( $length ) {
+    return 20; // Указываем количество слов
+}
+add_filter( 'excerpt_length', 'my_excerpt_length' );

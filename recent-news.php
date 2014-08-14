@@ -1,3 +1,5 @@
+<div class="recNew">
+    <h1>Наши новости</h1>
 <?php
 wp_reset_query();
 // The Query
@@ -11,9 +13,11 @@ while ( have_posts() ) : the_post();?>
             <h2><?php the_title();?></h2>
             <div class="date"><?php the_date();?></div>
         <div class="content"><?php the_excerpt();?></div>
+        <a href="<?php the_permalink(); ?>" class="next">Подробнее ></a>
     </div>
+
 <?php endwhile; ?>
 
 <?php
 wp_reset_query();
-?>
+?></div><div class="banner"></div>
